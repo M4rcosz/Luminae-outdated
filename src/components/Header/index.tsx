@@ -3,11 +3,10 @@ import Hamburguer from "/images/icons/hamburguer.svg";
 import styled from "@emotion/styled";
 import Field from "../Field";
 
-
 const StyledHeader = styled.header`
 padding: ${props => props.theme.spacing.md} 0;
 margin: 0 ${props => props.theme.spacing.md};
-max-width: 100%;
+height: max-content;
 `
 
 const CardNumber = styled.span`
@@ -22,8 +21,8 @@ const Header = () => {
         <>
             <StyledHeader>
                 <div className="flex justify-between ">
-                    <img src={Hamburguer} alt="icone de hamburguer para abrir o menu" />
-                    <img src={Logo} alt="icone da logo da site Luminae" />
+                    <img src={Hamburguer} alt="hamburguer para abrir o menu" />
+                    <img src={Logo} alt="icone da logo do site Luminae" />
                     <div className="flex items-center text-white gap-0.5">
                         <svg width="24" height="24" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M15.75 11.025L15.75 12.775C15.75 15.6745 18.1005 18.025 21 18.025C23.8995 18.025 26.25 15.6745 26.25 12.775V11.025" stroke="#434343" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

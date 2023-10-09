@@ -1,4 +1,13 @@
-# React + TypeScript + Vite
+# Luminae
+
+Um projeto para um site de E-commerce, voltado para vendas de roupas, mas também com venda de alguns aparelhos eletrônicos.
+
+## Figma
+
+Estou usando o Design e ideias da Saina Ghasemi, Australiana de Melbourne,
+o projeto do figma é [este](https://www.figma.com/file/UN5zuXxowlakVlkj9u7ef8/Ecommerce-UI-Kit-(Community)?node-id=0%3A1&mode=dev), usando ele como base e fazendo algumas melhorias de acessibilidade e SEO necessárias.
+
+## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -25,6 +34,12 @@ If you are developing a production application, we recommend updating the config
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## Dependências
+
+- Emotion
+- React Router DOM
+- Tailwind
 
 
 ## Problemas com a importação do styled do Emotion
