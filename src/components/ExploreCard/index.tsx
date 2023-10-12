@@ -1,4 +1,5 @@
 import styled from "@emotion/styled"
+import Typography from "../Typography"
 
 interface ExploreCardProps {
     title: string,
@@ -8,19 +9,6 @@ interface ExploreCardProps {
     cardColor: string,
     cardImage: string
 }
-
-const TitleExploreCard = styled.h2`
-color: ${props => props.theme.colors.base.b000};
-font-size: 16px;
-font-weight: 800;
-line-height: 30px; /* 191.667% */
-`
-
-const DescriptionExploreCard = styled.p`
-color: ${props => props.theme.colors.base.b000};
-font-size: 14px;
-line-height: 30px; /* 200% */
-`
 
 const AnchorExploreCard = styled.a`
 color: ${props => props.theme.colors.base.b000};
@@ -33,8 +21,23 @@ const ExploreCard = ({ title, description, link = "#", anchorText, cardColor, ca
     return (
         <div className="flex">
             <div style={{ backgroundColor: cardColor }} className="px-3 py-4 flex flex-col justify-center">
-                <TitleExploreCard>{title}</TitleExploreCard>
-                <DescriptionExploreCard>{description}</DescriptionExploreCard>
+                <Typography
+                    componente="h2"
+                    lineHeight="30px"
+                    className="font-extrabold text-base"
+
+                >
+                    {title}
+                </Typography>
+
+                <Typography
+                    componente="p"
+                    lineHeight="30px"
+                    className="text-sm"
+
+                >
+                    {description}
+                </Typography>
                 <AnchorExploreCard href={link}>{anchorText}</AnchorExploreCard>
             </div>
             <img src={cardImage} alt="" className="w-1/2" />

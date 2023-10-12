@@ -29,6 +29,7 @@ declare module '@emotion/react' {
                 b800: string,
                 b700: string,
                 b600: string,
+                b400: string,
                 b200: string,
                 b100: string,
                 b000: string
@@ -44,7 +45,7 @@ declare module '@emotion/react' {
     }
 }
 
-const theme = {
+export const theme = {
     colors: {
         primary: {
             p900: "#3840A9",
@@ -72,6 +73,7 @@ const theme = {
             b800: "#262626",
             b700: "#434343",
             b600: "#555555",
+            b400: "#9D9D9D",
             b200: "#D9D9D9",
             b100: "#E9E9E9",
             b000: "#FFFFFF"

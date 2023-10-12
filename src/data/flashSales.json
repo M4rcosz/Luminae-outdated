@@ -1,0 +1,50 @@
+[
+    {
+        "flashSales": [
+            {
+                "id": 1,
+                "discountLeft": "12:43:12",
+                "imageProduct": "/images/products/produto1.png",
+                "productName": "Tonny Black",
+                "productDescription": "Shoulder bag-White-Plain",
+                "evaluationNumber": 54,
+                "price": 120.99,
+                "discountPrice": 69.99,
+                "discount": 40
+            },
+            {
+                "id": 2,
+                "discountLeft": "02:05:32",
+                "imageProduct": "/images/products/produto2.png",
+                "productName": "Reebok",
+                "productDescription": "Women’s Powder sneakers",
+                "evaluationNumber": 54,
+                "price": 112.02,
+                "discountPrice": 129.99,
+                "discount": 40
+            },
+            {
+                "id": 3,
+                "discountLeft": "12:43:12",
+                "imageProduct": "/images/products/produto1.png",
+                "productName": "Tonny Black",
+                "productDescription": "Shoulder bag-White-Plain",
+                "evaluationNumber": 54,
+                "price": 120.99,
+                "discountPrice": 69.99,
+                "discount": 40
+            },
+            {
+                "id": 4,
+                "discountLeft": "02:05:32",
+                "imageProduct": "/images/products/produto2.png",
+                "productName": "Reebok",
+                "productDescription": "Women’s Powder sneakers",
+                "evaluationNumber": 54,
+                "price": 112.02,
+                "discountPrice": 129.99,
+                "discount": 40
+            }
+        ]
+    }
+]
