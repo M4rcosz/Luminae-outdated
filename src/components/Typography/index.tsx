@@ -4,7 +4,7 @@ type TypographyComponent = "h1" | "h2" | "h3" | "h4" | "h5" | "p" | "strong" | "
 
 interface TypographyProps {
   componente: TypographyComponent;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   color?: string;
   fontSize?: string;
   lineHeight?: string;

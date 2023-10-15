@@ -45,3 +45,7 @@ If you are developing a production application, we recommend updating the config
 ## Problemas com a importação do styled do Emotion
 
 Por algum motivo, talvez na hora da instalação do pacote, venho enfrentando um problema, meu auto-complete do *styled*, está importando `import styled from "@emotion/styled/macro";` ao invés de `import styled from "@emotion/styled";` por alguma motivo, esse ***/macro*** vem me causando problemas.
+
+## Dinamicidade dos Dados
+
+Nesta versão que estou trabalhando deste projeto, o objetivo primeiramente é criar o template do site, por isso, estou criando vários arquivos **JSON** para simular uma possível e futura implementação de um API que consiga gerir esses dados, trazendo assim um já template dinâmico.

@@ -1,8 +1,8 @@
-import styled from "@emotion/styled"
 import Typography from "../../Typography"
 import { theme } from "../../ThemeProviderComp"
 
 import FullStar from "/images/icons/Star.svg";
+import StyledImageProduct from "../../../styles/bgImagesTemplate";
 
 interface FlashSalesCardProps {
     imageProduct: string,
@@ -15,10 +15,7 @@ interface FlashSalesCardProps {
     discount: number
 }
 
-const StyledImageProduct = styled.div<{ image: string }>`
-background-image: url(${props => props.image});
-
-`
+// Implementar o time conter
 
 const FlashSalesCard = ({
     imageProduct,
@@ -62,7 +59,7 @@ const FlashSalesCard = ({
                 </div>
             </div>
 
-            <StyledImageProduct className="w-full h-44 bg-[length:170px_120px] bg-no-repeat bg-center" image={imageProduct}></StyledImageProduct>
+            <StyledImageProduct className="w-full h-44 bg-[length:135px_auto] bg-no-repeat bg-center" image={imageProduct}></StyledImageProduct>
 
             <div className="flex flex-col gap-1.5 px-3">
                 <Typography
@@ -98,7 +95,7 @@ const FlashSalesCard = ({
                         ${price}
                     </strong>
                     <strong
-                        className="text-[8px] px-1.5 py-[3px] rounded-sm"
+                        className="text-3xs px-1.5 py-0.75 rounded-sm"
                         style={{
                             color: theme.colors.base.b000,
                             backgroundColor: theme.colors.notifications

@@ -1,14 +1,10 @@
 import ExploreCard from "../../components/ExploreCard"
 import FlashSales from "../../components/FlashSales";
-
-import imageExploreCard1 from "/images/cardExplore/cardExplore-1.jpg";
-import imageExploreCard2 from "/images/cardExplore/cardExplore-2.jpg";
-
-
+import TrendingMustHaves from "../../components/TrendingMustHaves";
 
 export const Landing = () => {
     return (
-        <>
+        <main>
             <h1 style={{ opacity: "0", position: "absolute", width: "1px", margin: "-1px", zIndex: "-1" }}>Landing Page</h1>
             <section className="px-5 gap-y-3 flex flex-col mb-5">
                 <ExploreCard
@@ -16,7 +12,7 @@ export const Landing = () => {
                     title="Never-Ending Summer"
                     description="Throwback Shirts & all-day dressed"
                     anchorText="Explore all category"
-                    cardImage={imageExploreCard1}
+                    cardImage="/images/cardExplore/cardExplore-small-1.jpg"
                     link="#"
 
                 />
@@ -25,12 +21,19 @@ export const Landing = () => {
                     title="Best Lovin Sellers"
                     description="Bikini & Poolside glam include"
                     anchorText="Explore all category"
-                    cardImage={imageExploreCard2}
+                    cardImage="/images/cardExplore/cardExplore-small-2.jpg"
                     link="#"
                 />
+            </section>
+
+            <section className="mt-3 ">
                 <FlashSales />
             </section>
-        </>
+
+            <section className="mt-3 ">
+                <TrendingMustHaves />
+            </section>
+        </main>
     )
 }
 
