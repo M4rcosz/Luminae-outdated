@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom"
-import StyledImageProduct from "../../../styles/bgImagesTemplate"
-import { theme } from "../../ThemeProviderComp"
-import Typography from "../../Typography"
+
+import Link from "next/link"
+import StyledImageProduct from "@/components/BgImageTemplate"
+import { theme } from "@/components/ThemeProviderComp"
+import Typography from "@/components/Typography"
 
 interface TrendingMustHavesCardProps {
     newArivals: boolean
@@ -20,7 +21,10 @@ const TrendingMustHavesCard = ({
 }: TrendingMustHavesCardProps) => {
     return (
         <>
-            <StyledImageProduct image={image} className="h-80 bg-center bg-cover bg-no-repeat rounded-t-lg w-[87.5vw]">
+            <StyledImageProduct
+                image={image}
+                className="h-80 bg-center bg-cover bg-no-repeat rounded-t-lg w-[87.5vw]"
+            >
                 {newArivals && <span
                     className="flex items-center text-2xs w-fit py-0.75 px-1.5 gap-1.5 rounded relative top-2.5 left-2.5"
                     style={{ color: theme.colors.base.b000, backgroundColor: theme.colors.secondary.s600 }}
@@ -32,7 +36,10 @@ const TrendingMustHavesCard = ({
                 </span>}
             </StyledImageProduct>
 
-            <footer style={{ backgroundColor: theme.colors.base.b800 }} className="flex rounded-b-lg p-4 gap-3 items-center justify-between h-32 ">
+            <footer
+                style={{ backgroundColor: theme.colors.base.b800 }}
+                className="flex rounded-b-lg p-4 gap-3 items-center justify-between h-32 "
+            >
                 <div>
                     <Typography
                         componente="h5"
@@ -51,7 +58,7 @@ const TrendingMustHavesCard = ({
                     </Typography>
                 </div>
                 <Link
-                    to="#"
+                    href="#"
                     className="py-3 px-6 whitespace-nowrap border flex items-center rounded-lg h-fit max-[380px]:px-4"
                     style={{ borderColor: theme.colors.base.b200, color: theme.colors.base.b000 }}
                 >

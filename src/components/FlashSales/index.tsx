@@ -1,3 +1,5 @@
+'use client'
+
 import FlashSalesCard from "./FlashSalesCard";
 import data from "../../data/flashSales.json"
 import HeaderViewAll from "../HeaderViewAll";

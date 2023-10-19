@@ -1,3 +1,5 @@
+'use client'
+
 import HeaderViewAll from "../HeaderViewAll"
 import data from "../../data/trendingMustHave.json"
 import TrendingMustHavesCard from "./TrendingMustHavesCard";
@@ -13,7 +15,10 @@ const TrendingMustHaves = () => {
             />
             <ul className="flex overflow-x-auto mb-2 min-w-64">
                 {trends.map(trend => (
-                    <li key={`trendingMustHaves-${trend.id}`} className=" ml-5 ">
+                    <li
+                        key={`trendingMustHaves-${trend.id}`}
+                        className=" ml-5 "
+                    >
                         <TrendingMustHavesCard
                             newArivals={trend.newArivals}
                             image={trend.image}

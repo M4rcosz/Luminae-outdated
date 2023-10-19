@@ -1,8 +1,7 @@
-import Typography from "../../Typography"
-import { theme } from "../../ThemeProviderComp"
+import Typography from "@/components/Typography"
+import { theme } from "@/components/ThemeProviderComp"
 
-import FullStar from "/images/icons/Star.svg";
-import StyledImageProduct from "../../../styles/bgImagesTemplate";
+import StyledImageProduct from "@/components/BgImageTemplate";
 
 interface FlashSalesCardProps {
     imageProduct: string,
@@ -80,10 +79,10 @@ const FlashSalesCard = ({
                 </Typography>
 
                 <div className="flex w-[45%] items-center">
-                    <span><img src={FullStar} alt="" /></span>
-                    <span><img src={FullStar} alt="" /></span>
-                    <span><img src={FullStar} alt="" /></span>
-                    <span><img src={FullStar} alt="" /></span>
+                    <span><img src="/images/icons/Star.svg" alt="" /></span>
+                    <span><img src="/images/icons/Star.svg" alt="" /></span>
+                    <span><img src="/images/icons/Star.svg" alt="" /></span>
+                    <span><img src="/images/icons/Star.svg" alt="" /></span>
                     <strong className="ml-1 text-xs" style={{ color: theme.colors.base.b700 }}>({evaluationNumber})</strong>
                 </div>
                 <div className="flex gap-4 items-center">

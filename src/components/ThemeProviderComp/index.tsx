@@ -1,3 +1,5 @@
+'use client'
+
 import { ThemeProvider } from "@emotion/react"
 
 declare module '@emotion/react' {

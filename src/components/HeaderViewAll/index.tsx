@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom"
-import { styledLink1 } from "../../common/styles/StyledLink"
-import { theme } from "../ThemeProviderComp"
-import Typography from "../Typography"
+import Link from "next/link"
+import { styledLink1 } from "@/common/styles/StyledLink"
+import { theme } from "@/components/ThemeProviderComp"
+import Typography from "@/components/Typography"
 
 interface HeaderViewAllProps {
     title: string
@@ -18,7 +18,13 @@ const HeaderViewAll = ({ title, urlPath = "#" }: HeaderViewAllProps) => {
             >
                 {title}
             </Typography>
-            <Link to={urlPath} className="ml-auto" css={styledLink1}>View all</Link>
+            <Link
+                href={urlPath}
+                className="ml-auto"
+                css={styledLink1}
+            >
+                View all
+            </Link>
         </div>
     )
 }

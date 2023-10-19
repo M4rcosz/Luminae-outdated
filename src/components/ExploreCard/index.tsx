@@ -1,5 +1,7 @@
+'use client'
+
 import styled from "@emotion/styled"
-import Typography from "../Typography"
+import Typography from "@/components/Typography"
 
 interface ExploreCardProps {
     title: string,
@@ -10,6 +12,7 @@ interface ExploreCardProps {
     cardImage: string
 }
 
+// REFACT
 const AnchorExploreCard = styled.a`
 color: ${props => props.theme.colors.base.b000};
 font-size: 12px;
@@ -20,7 +23,10 @@ text-decoration-line: underline;
 const ExploreCard = ({ title, description, link = "#", anchorText, cardColor, cardImage }: ExploreCardProps) => {
     return (
         <div className="flex">
-            <div style={{ backgroundColor: cardColor }} className="px-3 py-4 flex flex-col justify-center">
+            <div
+                style={{ backgroundColor: cardColor }}
+                className="px-3 py-4 flex flex-col justify-center"
+            >
                 <Typography
                     componente="h2"
                     lineHeight="30px"
