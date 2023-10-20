@@ -1,8 +1,10 @@
+'use client'
+
 import ExploreCard from "@/components/ExploreCard"
 import FlashSales from "@/components/FlashSales";
 import TrendingMustHaves from "@/components/TrendingMustHaves";
 
-export const Landing = () => {
+const Landing = () => {
   return (
     <main>
       <h1 style={{ opacity: "0", position: "absolute", width: "1px", margin: "-1px", zIndex: "-1" }}>Landing Page</h1>
@@ -38,3 +40,4 @@ export const Landing = () => {
 }
 
 export default Landing
+

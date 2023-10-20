@@ -21,7 +21,7 @@ const HeaderViewAll = ({ title, urlPath = "#" }: HeaderViewAllProps) => {
             <Link
                 href={urlPath}
                 className="ml-auto"
-                css={styledLink1}
+            // css={styledLink1}
             >
                 View all
             </Link>
