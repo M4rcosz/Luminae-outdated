@@ -3,6 +3,7 @@ import { styledLink1 } from "@/common/styles/StyledLink"
 import { theme } from "@/components/ThemeProviderComp"
 import Typography from "@/components/Typography"
 
+
 interface HeaderViewAllProps {
     title: string
     urlPath?: string

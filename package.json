@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "dev5500": "next dev -- --port 5500",
+    "dd": "next dev -- --port 5500",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "bs": "next build && next start"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",

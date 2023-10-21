@@ -1,6 +1,4 @@
-import Visa from "/images/icons/visa.svg";
-import Mastercard from "/images/icons/mastercard.svg"
-import Paypal from "/images/icons/paypal.svg";
+'use client'
 import styled from "@emotion/styled";
 
 const StyledFooterContainer = styled.div`
@@ -61,9 +59,9 @@ const Footer = () => {
                 </ul>
             </StyledFooterContainer>
             <div className="flex grayscale justify-center gap-6 my-6">
-                <img className="scale-90" src={Visa} alt="Logo da VISA" />
-                <img className="scale-90" src={Mastercard} alt="Logo da Mastercard" />
-                <img className="scale-90" src={Paypal} alt="Logo do Paypal" />
+                <img className="scale-90" src="/images/icons/visa.svg" alt="Logo da VISA" />
+                <img className="scale-90" src="/images/icons/mastercard.svg" alt="Logo da Mastercard" />
+                <img className="scale-90" src="/images/icons/paypal.svg" alt="Logo do Paypal" />
             </div>
         </footer>
     )

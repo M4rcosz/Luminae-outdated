@@ -1,5 +1,4 @@
 'use client'
-
 import ExploreCard from "@/components/ExploreCard"
 import FlashSales from "@/components/FlashSales";
 import TrendingMustHaves from "@/components/TrendingMustHaves";
